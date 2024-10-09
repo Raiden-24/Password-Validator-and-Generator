@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator & Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN for Eye Icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Password Validator Section -->
+        <!-- Password Validator Section -->
+<div class="validator-section">
+    <h2>Password Validator</h2>
+    <div class="password-input">
+        <input type="password" id="password" placeholder="Enter your password" oninput="validatePassword()">
+        <button type="button" id="togglePassword" onclick="togglePassword()">
+            👁️
+        </button>
+    </div>
+    <div class="validation-checklist">
+        <label><input type="checkbox" id="lengthCheck" disabled> At least 8 characters</label><br>
+        <label><input type="checkbox" id="digitCheck" disabled> Contains a digit</label><br>
+        <label><input type="checkbox" id="specialCharCheck" disabled> Contains a special character (!@#$%^&*)</label><br>
+        <label><input type="checkbox" id="caseCheck" disabled> Contains both uppercase and lowercase</label>
+    </div>
+    <p id="feedback"></p>
+</div>
+
+
+        <!-- Password Generator Section -->
+        <div class="generator-section">
+            <h2>Password Generator</h2>
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" min="6" max="20" value="12">
+            <br>
+            <input type="checkbox" id="uppercase" checked> Include Uppercase Letters
+            <br>
+            <input type="checkbox" id="lowercase" checked> Include Lowercase Letters
+            <br>
+            <input type="checkbox" id="numbers" checked> Include Numbers
+            <br>
+            <input type="checkbox" id="symbols" checked> Include Special Characters
+            <br>
+            <button onclick="generatePassword()">Generate Password</button>
+            <p id="generatedPassword"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

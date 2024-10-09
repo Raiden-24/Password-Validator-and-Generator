@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type="password"],
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.validation-checklist {
+    text-align: left;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.validation-checklist input {
+    margin-right: 10px;
+}
+
+p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#feedback {
+    color: red;
+}
+
+#generatedPassword {
+    color: green;
+}
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+#password {
+    padding-right: 30px; /* To give space for the eye icon */
+}
+
+
+.password-input {
+    position: relative; /* To position the button */
+}
+
+#togglePassword {
+    position: absolute; /* Position it over the input */
+    right: 10px; /* Adjust as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center adjustment */
+    background: #f0f0f0; /* Light background color */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px; /* Increased padding for a larger button */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 18px; /* Increase font size for better visibility */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+#togglePassword:hover {
+    background: #e0e0e0; /* Darken background on hover */
+}
+
+#togglePassword:focus {
+    outline: none; /* Remove focus outline */
+    border-color: #007bff; /* Highlight border on focus */
+}
